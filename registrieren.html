@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrierung</title>
+    <link rel="stylesheet" href="regestrieren.css">
+</head>
+<body>
+    <h1>Registrieren Sie sich:</h1>
+    <form id="registration-form">
+        <label for="username">Benutzername:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Passwort:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="confirm-password">Passwort bestätigen:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+
+        <button type="submit">Registrieren</button>
+    </form>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const registrationForm = document.getElementById("registration-form");
+            registrationForm.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                // Benutzerdaten aus dem Registrierungsformular abrufen
+                const username = document.getElementById("username").value;
+                const password = document.getElementById("password").value;
+                const confirmPassword = document.getElementById("confirm-password").value;
+
+                // Hier sollte die Überprüfung der Benutzerdaten stattfinden
+                // Zum Beispiel: Überprüfe, ob das Passwort und die Bestätigung übereinstimmen
+                if (password === confirmPassword) {
+                    // Hier kannst du den Registrierungsprozess fortführen (z. B. in einer Datenbank speichern)
+                    alert("Registrierung erfolgreich!");
+
+                    // Optional: Weiterleitung zur Anmeldeseite
+                    window.location.href = "anmelden.html"; // Hier den Dateinamen der Anmeldeseite angeben
+                } else {
+                    alert("Die Passwörter stimmen nicht überein. Bitte überprüfen Sie Ihre Eingabe.");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+

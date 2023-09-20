@@ -1,0 +1,43 @@
+body {
+    text-align: center;
+    background-color: rgb(20, 20, 20);
+    position: relative; /* Stelle den body-Container als Referenz für absolute Positionierung ein */
+}
+
+/* Element oben rechts */
+#top-right-element {
+    position: absolute;
+    top: 10px; /* Abstand vom oberen Rand */
+    right: 10px; /* Abstand vom rechten Rand */
+    color: white;
+    font-size: 18px;
+    /* Weitere Stildefinitionen nach Bedarf */
+}
+
+/* Element oben links */
+#top-left-element {
+    position: absolute;
+    top: 10px; /* Abstand vom oberen Rand */
+    left: 10px; /* Abstand vom linken Rand */
+    color: white;
+    font-size: 18px;
+    /* Weitere Stildefinitionen nach Bedarf */
+}
+
+#board {
+    background-color: black;
+    border-top: 5px solid rgb(255, 145, 0);
+    border-left: 5px solid rgb(255, 145, 0);
+    border-right: 5px solid rgb(255, 145, 0);
+}
+
+a {
+    color: orangered;
+}
+div{
+    color: rgb(255, 145, 0);
+}
+ball{
+    color: green;
+}
+

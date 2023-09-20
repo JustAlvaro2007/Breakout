@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("externer-hintergrund.jpg"); /* Hintergrundbild hinzufügen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Das Hintergrundbild bleibt beim Scrollen fixiert */
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(31, 31, 31); /* Hintergrundfarbe mit Transparenz */
+}
+
+.login-box {
+    text-align: center;
+    padding: 20px;
+    background-color: #070707; /* Hintergrundfarbe der Box */
+    border-radius: 10px; /* Abgerundete Ecken */
+    box-shadow: 0px 0px 10px rgb(255, 145, 0); /* Schatten */
+}
+
+h1 {
+    color: #eb7f04;
+}
+
+/* Blauer Text */
+.blue-text {
+    color: rgb(255, 102, 0);
+}
+
+/* Roter Text */
+.red-text {
+    color: rgb(255, 123, 0);
+}
+
+/* Grüne Schaltfläche */
+.green-button {
+    background-color: rgb(0, 0, 0);
+    color: rgb(248, 94, 5);
+}
